@@ -15,17 +15,18 @@ This is what the output usually looks like:
     :width: 722px
     :alt: Normal mode, without poo
     :align: center
-    :target:: https://github.com/pelme/pytest-poo/raw/master/screenshots/normal.png
+    :target: https://github.com/pelme/pytest-poo/raw/master/screenshots/normal.png
 
 ... when passing --poo, this is what is outputted instead:
 
 .. image:: https://github.com/pelme/pytest-poo/raw/master/screenshots/poo.png
     :width: 722px
-    :alt: Normal mode, without poo
+    :alt: Poo mode!
     :align: center
-    :target:: https://github.com/pelme/pytest-poo/raw/master/screenshots/poo.png
+    :target: https://github.com/pelme/pytest-poo/raw/master/screenshots/poo.png
 
-+Requirements
+
+Requirements
 ============
 A recent version of pytest is required (>= 2.3.4).
 
