@@ -6,10 +6,26 @@ Really? Why?
 I showed the --poo option at EuroPython 2013. A number of people thought I
 should release it, so here it is.
 
-Example output
+Screenshots
 ==============
 
-Requirements
+This is what the output usually looks like:
+
+.. image:: https://github.com/pelme/pytest-poo/raw/master/screenshots/normal.png
+    :width: 722px
+    :alt: Normal mode, without poo
+    :align: center
+    :target:: https://github.com/pelme/pytest-poo/raw/master/screenshots/normal.png
+
+... when passing --poo, this is what is outputted instead:
+
+.. image:: https://github.com/pelme/pytest-poo/raw/master/screenshots/poo.png
+    :width: 722px
+    :alt: Normal mode, without poo
+    :align: center
+    :target:: https://github.com/pelme/pytest-poo/raw/master/screenshots/poo.png
+
++Requirements
 ============
 A recent version of pytest is required (>= 2.3.4).
 
