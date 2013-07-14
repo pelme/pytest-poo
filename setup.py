@@ -16,7 +16,7 @@ def read(fname):
 
 
 setup(name='pytest-poo',
-      version='0.1',
+      version='0.2',
       description='Visualize your crappy tests',
       author='Andreas Pelme',
       author_email='andreas@pelme.se',
