@@ -43,7 +43,9 @@ Marking tests
 --------------------
 Add the ``pytest.mark.poo`` marker to the tests that you consider crappy. The
 markers are standard py.test markers and can be used like this on a test
-function::
+function:
+
+.. code-block:: python
 
     import pytest
 
@@ -52,7 +54,9 @@ function::
         assert 0
 
 
-or for classes::
+or for classes:
+
+.. code-block:: python
 
     import pytest
 
@@ -60,7 +64,9 @@ or for classes::
         pytestmark = [pytest.mark.poo]
 
 
-... or for entire modules::
+... or for entire modules:
+
+.. code-block:: python
 
     import pytest
 
@@ -79,7 +85,9 @@ Showing crappy tests during test run
 ------------------------------------
 
 Just run py.test with the ``--poo`` option to enable the output. To always
-enable, add ``--poo`` to addopts in pytest.ini::
+enable, add ``--poo`` to addopts in pytest.ini:
+
+.. code-block:: ini
 
     [pytest]
     addopts = --poo
