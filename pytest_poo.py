@@ -1,7 +1,5 @@
-import pytest
 
-PILE_OF_POO = u"\U0001F4A9 "
-
+PILE_OF_POO = u"\U0001F4A9"
 
 def pytest_addoption(parser):
     group = parser.getgroup('Poo', 'Poo')
@@ -9,12 +7,11 @@ def pytest_addoption(parser):
                      action="store_true", dest="poo", default=False,
                      help="Show crappy tests.")
 
-
-def pytest_report_teststatus(report):
-    if (not pytest.config.option.poo) or ('poo' not in report.keywords) or (report.when != 'call'):
+def pytest_report_teststatus(report, config):
+    if (not config.option.poo) or ('poo' not in report.keywords) or (report.when != 'call'):
         return
 
-    if (pytest.config.option.verbose == -1 and report.passed) or pytest.config.option.verbose >= 0:
+    if (config.option.verbose == -1 and report.passed) or config.option.verbose >= 0:
         return (report.outcome, PILE_OF_POO, '%s (%s)' % (report.outcome.upper(), PILE_OF_POO))
 
 
